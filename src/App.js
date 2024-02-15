@@ -4,24 +4,19 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './styles/theme';
 import { BrowserRouter as Router } from 'react-router-dom'; 
 import ProjectRoutes from './routes/Routes'; 
-import { makeStyles } from '@mui/styles';
+import { styled } from '@mui/system';
 
-const useStyles = makeStyles((theme) => ({
-    appContainer: {
-        textAlign: 'center',
-        height: '100vh',
-        ...theme.palette.backgroundGradient,
-    },
-}));
+const AppContainer = styled('div')({
+    textAlign: 'center',
+    height: '100vh',
+});
 function App() {
-  const classes=useStyles()
     return (
         <ThemeProvider theme={theme}>
             <Router>
-                <div className={classes.appContainer}>
-                    {"sustainable disciple"}
+                <AppContainer>
                     <ProjectRoutes />
-                </div>
+                </AppContainer>
             </Router>
         </ThemeProvider>
     );

@@ -20,6 +20,11 @@ const theme = createTheme({
             fontWeight: 400,
             color: '#ffffff', 
         },
+        h3600:{
+            fontSize: '1.875rem', 
+            fontWeight: 600,
+            color: '#ffffff',
+        },
         h4: {
             fontSize: '1.5rem', 
             fontWeight: 400,
@@ -31,15 +36,20 @@ const theme = createTheme({
             color: '#ffffff', 
         },
         body1: {
-            fontSize: '1rem',
+            fontSize: '.8rem',
             fontWeight: 400,
             color: '#ffffff',
         },
         body2: {
-            fontSize: '0.9rem',
+            fontSize: '0.7rem',
             fontWeight: 400,
-            color: '#888888',
+            color: '#ffffff',
         },
+        subtitle2:{
+            fontSize: '0.7rem',
+            fontWeight: 400,
+            color: '#ffffff',
+        }
     },
     components: {
         MuiButton: {
